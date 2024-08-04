@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -66,10 +67,15 @@ public class MainActivity extends AppCompatActivity {
                     .replace(R.id.fragmentView, new MemeFragment())
                     .commit();
             return true;
+        } else if (item.getItemId() == R.id.menu_option_item) {
+            Toast.makeText(this, "Opening settings...", Toast.LENGTH_SHORT).show();
+            return true;
+        } else if (item.getItemId() == R.id.menu_alert_dialog) {
+            showCategoryDialog();
+            return true;
         }
-        
-        showCategoryDialog();
-        return true;
+
+        return this.onOptionsItemSelected(item);
     }
 
     private void showCategoryDialog() {
