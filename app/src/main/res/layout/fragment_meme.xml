@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".meme.MemeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/memeImageView1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/meme_description"
+            android:src="@drawable/bug_at_3" />
+
+        <ImageView
+            android:id="@+id/memeImageView2"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/meme_description"
+            android:src="@drawable/code_finally_work" />
+
+        <ImageView
+            android:id="@+id/memeImageView3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:contentDescription="@string/meme_description"
+            android:src="@drawable/monday_again" />
+    </LinearLayout>
+
+
+</ScrollView>
